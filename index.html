@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQ Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>IQ Calculator</h1>
+  </header>
+  
+  <main>
+    <!-- Age input section -->
+    <section id="age-section">
+      <h2>Enter Your Age</h2><br>
+      <form id="age-form">
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+        <button type="button" id="start-btn">Start Test</button>
+      </form>
+    </section>
+    
+    <!-- Quiz section -->
+    <section id="quiz-section" style="display: none;">
+      <h2>Answer the questions below:</h2>
+      <form id="quiz-form">
+        <div id="questions-container"></div>
+        <button type="button" id="submit-btn">Calculate IQ</button>
+      </form>
+    </section>
+    
+    <!-- Result section -->
+    <section id="result-section" style="display: none;">
+      <h2>Your IQ Score:</h2>
+      <p id="result"></p>
+      <button id="retry-btn">Retry</button>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
